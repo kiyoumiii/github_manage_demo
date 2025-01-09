@@ -27,7 +27,7 @@ export default {
 }
 </script>
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref, onMounted } from 'vue';
 import { ElMessage } from 'element-plus';
 import { useBackgroundStore } from '@/store/loginBg';
 const backgroundImg = useBackgroundStore().backgroundImg;
@@ -55,6 +55,11 @@ function upLoadChange(){
 function selectImg(index:number){
     useBackgroundStore().changeActive(index)
 }
+
+// 在组件挂载时初始化图片并清除本地存储
+onMounted(async () => {
+    await useBackgroundStore().initializeImages();
+});
 
 
 </script>

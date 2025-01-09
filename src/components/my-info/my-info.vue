@@ -1,9 +1,10 @@
 <template>
-  <aside id="my-info" ref="myInfo" >
+  <aside id="my-info" ref="myInfo">
     <div class="user">
       <div class="user-info">
         <div class="photo">
-          <img :src="userStore.userInfo.portrait" alt="头像">
+          <!-- <img :src="userStore.userInfo.portrait" alt="头像"> -->
+          <img :src="require('@/assets/avater/loopy1.jpg')" alt="头像">
         </div>
         <div class="user-name">
           <span class="name">{{userStore.userInfo.userName}}</span>
@@ -17,26 +18,14 @@
       <div class="address" v-if="props.showAddress">
         <div>
           <span class="title">github地址:</span>
-          <input 
-            class="edit-box" 
-            v-if="edit1" 
-            @blur="edit1 = false"
-            @change="changeAddress('github')"
-            ref="editInput1" 
-            type="text" 
-            v-model="repositoryStore.github.address">
+          <input class="edit-box" v-if="edit1" @blur="edit1 = false" @change="changeAddress('github')" ref="editInput1"
+            type="text" v-model="repositoryStore.github.address">
           <span v-else class="content" @click="editAddress1">{{repositoryStore.github.address}}</span>
         </div>
         <div>
           <span class="title">gitee地址:</span>
-          <input 
-            class="edit-box" 
-            v-if="edit2"
-            @blur="edit2 = false"
-            @change="changeAddress('gitee')" 
-            ref="editInput2" 
-            type="text" 
-            v-model="repositoryStore.gitee.address">
+          <input class="edit-box" v-if="edit2" @blur="edit2 = false" @change="changeAddress('gitee')" ref="editInput2"
+            type="text" v-model="repositoryStore.gitee.address">
           <span v-else class="content" @click="editAddress2">{{repositoryStore.gitee.address}}</span>
         </div>
       </div>
@@ -44,8 +33,8 @@
         <i class="iconfont icon-tuichu"></i>
       </button>
     </div>
-    <MyInfoTimeline title="Github" :info="repositoryStore.github.data"/>
-    <MyInfoTimeline title="Gtiee" :info="repositoryStore.gitee.data"/>
+    <MyInfoTimeline title="Github" :info="repositoryStore.github.data" />
+    <MyInfoTimeline title="Gtiee" :info="repositoryStore.gitee.data" />
   </aside>
 </template>
 

@@ -12,7 +12,7 @@ export const useTodoStore =  defineStore('todo',{
         {
             finishTodo:[
                 {
-                    date:'2022-09-01',
+                    date:'2024-09-01',
                     id:'0',
                     child:[
                         {
@@ -29,7 +29,7 @@ export const useTodoStore =  defineStore('todo',{
 
                 },
                 {
-                    date:'2022-09-02',
+                    date:'2024-09-02',
                     id:'1',
                     child:[
                         {
@@ -53,25 +53,25 @@ export const useTodoStore =  defineStore('todo',{
             todo:[
                 {
                     id:'0',
-                    date:'2022-09-08',
+                    date:'2024-09-08',
                     time:'09:00',
                     event:'继续写bug',
                 },
                 {
                     id:'1',
-                    date:'2022-09-08',
+                    date:'2024-09-08',
                     time:'10:00',
                     event:'写一堆bug',
                 },
                 {
                     id:'2',
-                    date:'2022-09-09',
+                    date:'2024-09-09',
                     time:'09:00',
                     event:'找上次的bug',
                 },
                 {
                     id:'3',
-                    date:'2022-09-10',
+                    date:'2024-09-10',
                     time:'10:00',
                     event:'修修bug',
                 }
