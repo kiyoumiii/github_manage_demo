@@ -40,7 +40,7 @@ export const useTodoStore =  defineStore('todo',{
                         {
                             id:'1',
                             time:'10:00',
-                            event:'写屎山代码'
+                            event:'改屎山代码'
                         },
                         {
                             id:'2',

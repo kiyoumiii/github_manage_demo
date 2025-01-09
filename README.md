@@ -1,7 +1,11 @@
 
 ## 简介
 
-该后台管理系统使用了最新的`vue3` `pinia` `Element-Plus` `TypeScript` `echarts`等技术开发，很多东西都是按照自己想法用原生js实现，作者没怎么测试，可能有些许bug，如果大家发现可以留言，互相学习！
+简单的git仓库to do list管理系统，可用作vue3后台管理系统项目学习模板
+
+## 技术栈
+
+`vue3` `pinia` `Element-Plus` `TypeScript` `echarts`
 
 
 ## 项目功能
@@ -29,13 +33,8 @@
 - echarts图表的动态数据展示
 
 
-## 项目使用
+## 快速开始
 
-- 获取项目代码
-
-```
-git clone https://github.com/ZhanYu28/vue3-management-template.git
-```
 
 - 安装依赖
 
@@ -50,35 +49,6 @@ npm install
 ```
 npm run serve
 ```
-
-- 用户名密码表
-```
-dabai-----123456 管理员
-xiaobai---000000 会员
-1---------111111 测试
-```
-
-## 项目部分展示
-
-- 登陆页
-
-![login](./screenshot/login1.png)
-![login](./screenshot/login2.png)
-
-- 首页
-
-![home](./screenshot/home.png)
-
-- 设置
-
-![setting](./screenshot/setting.png)
-- 夜间模式
-
-![night theme](./screenshot/night.png)
-
-- 粉色主题
-
-![pink theme](./screenshot/pink-theme.png)
 
 
 

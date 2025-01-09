@@ -11,32 +11,32 @@ const routes:Array<RouteRecordRaw> = [
             path:'/home',
             name:'home',
             component:() => import('@/views/layout-home/layout-home.vue'),
-            meta:{name:'首页',icon:'icon-home'}
+            meta:{name:'首页',icon:'icon-home', requiresAuth: false }
             },
             {
             path:'/repository',
             name:'repository',
             component:() => import('@/views/layout-home/layout-home.vue'),
-            meta:{name:'仓库',icon:'icon-ziliaoku'}
+                meta: { name: '仓库', icon: 'icon-ziliaoku', requiresAuth: false }
             },
             {
             path:'/reference',
             name:'reference',
             component:() => import('@/views/layout-home/layout-home.vue'),
-            meta:{name:'参考资料',icon:'icon-daohang'}
+                meta: { name: '参考资料', icon: 'icon-daohang', requiresAuth: false }
             },
             {
             path:'/authority',
             name:'authority',
             component:() => import('@/views/layout-home/layout-home.vue'),
-            meta:{name:'用户管理',icon:'icon-yonghuguanli'}
+                meta: { name: '用户管理', icon: 'icon-yonghuguanli', requiresAuth: false }
             },
             {
                 path:'/setting',
                 name:'setting',
                 redirect:{name:'theme'},
                 component:()=>import('@/views/layout-setting/layout-setting.vue'),
-                meta:{name:'设置',icon:'icon-shezhi-xianxing'},
+                meta: { name: '设置', icon: 'icon-shezhi-xianxing', requiresAuth: false },
                 children:[
                     {
                         path:'/setting/theme',

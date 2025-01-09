@@ -38,7 +38,7 @@
 <script lang="ts">
 import {  reactive, ref } from 'vue-demi'
 import { useBackgroundStore } from '@/store/loginBg'
-import { useUserStore } from '@/store/userStore'
+// import { useUserStore } from '@/store/userStore'
 import {User,Lock} from '@element-plus/icons-vue'
 import BaseLoginSettingBg from './base-login-setting-bg.vue'
 import SettingTheme from '@/components/setting-theme.vue'
@@ -79,7 +79,7 @@ export default {
             if (valid) {
                 const {userName,password} = ruleForm;
                 try {
-                    await useUserStore().getToken(userName,password);
+                    // await useUserStore().getToken(userName,password);
                     router.push({name:'home'})
                 } catch (error) {
                     ElMessage.error((error as Error).message)
@@ -88,10 +88,10 @@ export default {
         })
     }
     // 预加载图片
-    // backgroundStore.backgroundImg.map(item=>{
-    //     const image = new Image();
-    //     image.src = item.url
-    // })
+    backgroundStore.backgroundImg.map(item=>{
+        const image = new Image();
+        image.src = item.url
+    })
     
 </script>
 

@@ -5,11 +5,11 @@ import useDate from "@/utils/useDate";
 export const useRepositoryStore = defineStore('repository',{
     state:()=>({
         github:{
-            address:"https://github.com/ZhanYu28/yuanshen-eye-animation.git",
+            address:"https://github.com/kiyoumiii",
             data:<{}[]>[]
         },
         gitee:{
-            address:"https://gitee.com/dabai-library/yuanshen-eye.git",
+            address:"https://gitee.com/kiyoumiii",
             data:<{}[]>[]
         },
     }),
